@@ -17,4 +17,4 @@ Make sure you have added the FRC plugins first, as described in the [documentati
 
 
 Tip: edit your Git Bash shortcut's "Start in" field:
-%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects\RK2013\src\edu\wpi\first\wpilibj\templates
+`%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects\RK2013\src\edu\wpi\first\wpilibj\templates`
