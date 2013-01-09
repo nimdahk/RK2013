@@ -1,15 +1,15 @@
 
 package edu.wpi.first.wpilibj.templates.commands;
+import edu.wpi.first.wpilibj.templates.subsystems.*;
 
-/**
- *
- * @author bradmiller
- */
-public class ExampleCommand extends CommandBase {
-
-    public ExampleCommand() {
+public class DecWheel1 extends CommandBase {
+    
+    public DecWheel1() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+        //ShooterWheel1 wheel1;
+        //wheel1 = new ShooterWheel1();
+        requires(wheel1);
     }
 
     // Called just before this Command runs the first time
@@ -18,6 +18,9 @@ public class ExampleCommand extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        if (wheel1.getSpeed() <= 1.0){
+            wheel1.setSpeed(wheel1.getSpeed() - 0.05);
+        }
     }
 
     // Make this return true when this Command no longer needs to run execute()
