@@ -5,6 +5,7 @@
 package edu.wpi.first.wpilibj.templates.subsystems;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.templates.RobotMap;
 
 /**
  *
@@ -16,7 +17,7 @@ public class ShooterWheel1 extends Subsystem {
     Jaguar wheel1;
     
     public void ShooterWheel1(){
-        wheel1 = new Jaguar(1);
+        wheel1 = new Jaguar(RobotMap.SHOOTERWHEEL1);
     }
     
     public void setSpeed(double speed){
