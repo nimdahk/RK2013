@@ -1,7 +1,5 @@
 
 package edu.wpi.first.wpilibj.templates.commands;
-import edu.wpi.first.wpilibj.templates.subsystems.*;
-
 public class IncWheel1 extends CommandBase {
     
     public IncWheel1() {
