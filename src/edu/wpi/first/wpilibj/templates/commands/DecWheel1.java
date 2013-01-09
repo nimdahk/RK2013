@@ -18,7 +18,7 @@ public class DecWheel1 extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        if (wheel1.getSpeed() <= 1.0){
+        if (wheel1.getSpeed() > -1.0){
             wheel1.setSpeed(wheel1.getSpeed() - 0.05);
         }
     }
